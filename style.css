@@ -1,0 +1,42 @@
+body{
+  background-image: url(istockphoto-1045979216-612x612.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  height: 646px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.innercontainer {
+  height: 310px;
+  margin-right: 385px;
+  justify-content: space-around;
+  width: 10px;
+  margin-top: -330px;
+  border-radius: 32px;
+  border: none;
+  /* box-shadow: 2px 4px 4px 2px black; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  border-radius: 50px;
+  background-color: #0b0b0b;
+  width: 86px;
+  height: 86px;
+}
+#box1 {
+  width: 228px;
+  height: 100px;
+  color: white;
+  font-size: 46px;
+  /* border: inset; */
+  position: absolute;
+  left: 916px;
+  bottom: 240px;
+  border-radius: 15px;
+} 
