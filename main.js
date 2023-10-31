@@ -66,45 +66,45 @@ document.body.append(container,box);
 // setInterval(Signal,1000)
 
 let b=0;
-let Red=10;
-let yellow=5;
-let Green=10;
+let count=10;
 
 function Signal(){
 
 if(b<11){
 
-    Btn1.style.backgroundColor="#df4545f5"
-      Btn2.style.backgroundColor=""
-      Btn3.style.backgroundColor=""
-    box.innerText=Red;
-    Red--;
+    Btn1.classList.add("red")
+    Btn3.classList.remove("green")
+    box.innerText=count;
+    count--;
+    if(count<0){
+      count =5
+    }
 }
  else if(b>=11 && b<17){
 
-    Btn1.style.backgroundColor=""
-          Btn2.style.backgroundColor="#c2c251"
-          Btn3.style.backgroundColor=""
-          box.innerText=yellow;
-          yellow--;
+  
+         Btn1.classList.remove("red")
+         Btn2.classList.add("yellow")
+          box.innerText=count;
+          count--;
+          if(count<0){
+            count =10
+          }
 
 }
 else if(b>=17 && b<=27){
-
-    Btn1.style.backgroundColor=""
-          Btn2.style.backgroundColor=""
-          Btn3.style.backgroundColor="#65c165"
-          box.innerText=Green;
-          Green--;
+  
+  Btn2.classList.remove("yellow")
+  Btn3.classList.add("green")
+  box.innerText=count;
+          count--;
 }
 
 
 if(b==28){
 
      b=0;
- Red=10;
-yellow=5;
- Green=10;
+      count =5
 }
 
 b++;
